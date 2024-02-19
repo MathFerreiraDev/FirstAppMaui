@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstAppMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Primeira entrada:" FontSize="Large"/>
+            <Entry x:Name="txt_n1" Keyboard="Numeric"/>
+
+            <Label Text="Segunda entrada:" FontSize="Large"/>
+            <Entry x:Name="txt_n2" Keyboard="Numeric"/>
+
+            <Button Text="Somare quantidades!" Clicked="Button_Clicked"/>
+
+            <Label x:Name="lbl_result" HorizontalOptions="Center" FontSize="45" FontAttributes="Bold" TextColor="DarkSlateBlue" IsVisible="False"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
